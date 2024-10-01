@@ -1,0 +1,33 @@
+dns_records.py: =============================================
+               Argus - DNS Records Check
+    =============================================
+    
+[37m[*] Fetching DNS records for: mramma.tn
+[37m[!] No CNAME records found for mramma.tn.
+[37m[!] No SOA records found for mramma.tn.
++-----------------------------------------------------------------------------+
+| Record Type | Record Value                                                  |
+|-------------+---------------------------------------------------------------|
+| A           | 216.239.38.21                                                 |
+|             | 216.239.36.21                                                 |
+|             | 54.36.91.62                                                   |
+|             | 216.239.32.21                                                 |
+|             | 216.239.34.21                                                 |
+| AAAA        | 2001:4860:4802:36::15                                         |
+|             | 2001:4860:4802:38::15                                         |
+|             | 2001:4860:4802:32::15                                         |
+|             | 2001:4860:4802:34::15                                         |
+| MX          | 100 mx3.mail.ovh.net.                                         |
+|             | 1 mx1.mail.ovh.net.                                           |
+|             | 5 mx2.mail.ovh.net.                                           |
+| NS          | dns1.tn.ovh.net.                                              |
+|             | ns1.tn.ovh.net.                                               |
+| TXT         | "google-site-verification=TNZwRHOk2byit8tV8Uym0xKYsh9X4urAlU… |
+|             | "4|www.mramma.tn"                                             |
+|             | "google-site-verification=cjSK4gQmxeKLSj4tJjU3u2t6t9zvG2mS1g… |
+|             | "v=spf1 include:mx.ovh.com ~all"                              |
+|             | "facebook-domain-verification=w5zg8z6efjlgmbsgygfwi5jjj44v70" |
+|             | "pinterest-site-verification=0f67424090e747e06c90d5c0d84730b… |
+|             | "facebook-domain-verification=j8la29feagomgdvytacu7u1ba2axfc" |
++-----------------------------------------------------------------------------+
+[37m[*] DNS records retrieval completed.

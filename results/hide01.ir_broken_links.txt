@@ -1,0 +1,8 @@
+broken_links.py: =============================================
+              Argus - Broken Links Check
+    =============================================
+    
+[36m[*] Starting broken link check on: hide01.ir
+[31m[!] Error occurred: Invalid URL 'hide01.ir': No scheme supplied. Perhaps 
+you meant https://hide01.ir?
+[36m[*] Broken link check completed.

@@ -1,0 +1,12 @@
+txt_records.py: [32m=============================================
+        Argus - TXT Record Retrieval Module
+=============================================[0m
+
+[36m[*] Retrieving TXT records for domain: hide01.ir[0m
++--------------------------------------------------------------+
+| TXT Record                                                   |
+|--------------------------------------------------------------|
+| v=spf1 include:mxsspf.sendpulse.com incl                     |
++--------------------------------------------------------------+
+
+[36m[*] TXT record retrieval completed for hide01.ir.[0m

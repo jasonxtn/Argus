@@ -1,0 +1,25 @@
+quality_metrics.py: [32m
+=============================================
+       Argus - Quality Metrics Check
+=============================================
+
+[37m[*] Fetching quality metrics for: hide01.ir
++-----------------------------------------------------------------------------+
+| Metric               | Value  | Analysis                                    |
+|----------------------+--------+---------------------------------------------|
+| Status Code          | 200    |                                             |
+| Load Time (s)        | 4.76   | Load time is acceptable but could be        |
+|                      |        | improved.                                   |
+| Page Size (KB)       | 134.07 | Page size is small.                         |
+| Total Requests       | 129    | High number of requests may slow down the   |
+|                      |        | page.                                       |
+| Compression Enabled  | Yes    | Content is compressed.                      |
+| HTTPS                | No     | Not using HTTPS. It is recommended for      |
+|                      |        | security and SEO.                           |
+| Mobile-Friendly      | Yes    | Page is mobile-friendly.                    |
+| Scripts Minified     | 11/38  | Consider minifying scripts to improve       |
+|                      |        | performance.                                |
+| Stylesheets Minified | 9/24   | Consider minifying stylesheets to improve   |
+|                      |        | performance.                                |
++-----------------------------------------------------------------------------+
+[37m[*] Quality metrics retrieval completed.

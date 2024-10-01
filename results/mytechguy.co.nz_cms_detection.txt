@@ -1,0 +1,12 @@
+cms_detection.py: [37m
+    =============================================
+            Argus - CMS Enumeration Module
+    =============================================
+    
+[37m[*] Enumerating CMS for: mytechguy.co.nz
++----------------------+
+| CMS Detection Result |
+|----------------------|
+| WordPress            |
++----------------------+
+[36m[*] CMS Enumeration completed.

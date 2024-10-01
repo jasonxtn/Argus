@@ -1,0 +1,10 @@
+sitemap.py: [32m
+    =============================================
+               Argus - Sitemap Parsing
+    =============================================
+    
+[37m[*] Fetching sitemap for: six2dez.com
+[31m[!] Error retrieving sitemap: Invalid URL 'six2dez.com/sitemap.xml': No 
+scheme supplied. Perhaps you meant https://six2dez.com/sitemap.xml?
+[31m[!] No sitemap found.
+[37m[*] Sitemap parsing completed.

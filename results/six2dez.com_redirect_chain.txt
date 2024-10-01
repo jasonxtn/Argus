@@ -1,0 +1,13 @@
+redirect_chain.py: [32m
+    =============================================
+          Argus - Redirect Chain Tracking
+    =============================================
+    
+[37m[*] Fetching redirect chain for: http://six2dez.com
++----------------------------------------------+
+| Redirect URL                   | Status Code |
+|--------------------------------+-------------|
+| http://six2dez.com/            | 302         |
+| http://pentestbook.six2dez.com | 301         |
++----------------------------------------------+
+[37m[*] Redirect chain tracking completed.

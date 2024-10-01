@@ -1,0 +1,11 @@
+performance_monitoring.py: [32m
+    =============================================
+           Argus - Performance Monitoring
+    =============================================
+    
+[37m[*] Fetching performance metrics for: hide01.ir
+[31m[!] Error retrieving performance metrics: 
+HTTPSConnectionPool(host='www.googleapis.com', port=443): Read timed out. (read
+timeout=10)
+[31m[!] Could not retrieve performance metrics.
+[37m[*] Performance monitoring completed.

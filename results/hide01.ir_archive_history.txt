@@ -1,0 +1,31 @@
+archive_history.py: [32m=============================================
+        Argus - Archive History Lookup
+=============================================[0m
+
+[36m[*] Retrieving archive history for domain: hide01.ir[0m
++---------------------------------------------------------------+
+| Archived URL                                                  |
+|---------------------------------------------------------------|
+| https://web.archive.org/web/20210228194616/https://hide01.ir/ |
+| https://web.archive.org/web/20210304112841/https://hide01.ir/ |
+| https://web.archive.org/web/20210315185323/https://hide01.ir/ |
+| https://web.archive.org/web/20210420140724/https://hide01.ir/ |
+| https://web.archive.org/web/20210504233058/https://hide01.ir/ |
+| https://web.archive.org/web/20210507121344/https://hide01.ir/ |
+| https://web.archive.org/web/20210727155129/https://hide01.ir/ |
+| https://web.archive.org/web/20210819123949/https://hide01.ir/ |
+| https://web.archive.org/web/20210917095545/https://hide01.ir/ |
+| https://web.archive.org/web/20210919205526/https://hide01.ir/ |
+| https://web.archive.org/web/20220227163706/https://hide01.ir/ |
+| https://web.archive.org/web/20220406040322/https://hide01.ir/ |
+| https://web.archive.org/web/20220406050517/https://hide01.ir/ |
+| https://web.archive.org/web/20220507221118/https://hide01.ir/ |
+| https://web.archive.org/web/20220522051125/https://hide01.ir/ |
+| https://web.archive.org/web/20220714175145/https://hide01.ir/ |
+| https://web.archive.org/web/20220812100414/https://hide01.ir/ |
+| https://web.archive.org/web/20220822174029/https://hide01.ir/ |
+| https://web.archive.org/web/20220919101404/https://hide01.ir/ |
+| https://web.archive.org/web/20220928004017/https://hide01.ir/ |
++---------------------------------------------------------------+
+
+[36m[*] Archive history retrieval completed for hide01.ir.[0m

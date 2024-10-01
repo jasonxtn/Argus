@@ -1,0 +1,8 @@
+traceroute.py: =============================================
+        Argus - Traceroute Module
+=============================================
+
+
+[*] Running traceroute on hide01.ir...
+[!] Traceroute command timed out.
+[!] Traceroute did not produce any output.

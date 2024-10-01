@@ -1,0 +1,9 @@
+social_media.py: [32m
+=============================================
+     Argus - Social Media Presence Check
+=============================================
+
+[37m[*] Please wait, this may take some time...
+[37m[*] Detecting social media presence for: http://mramma.tn
+[31m[!] No social media profiles found.
+[37m[*] Social media presence check completed.

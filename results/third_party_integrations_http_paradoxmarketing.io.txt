@@ -1,0 +1,6 @@
+Integration: Cloudflare
+Details: Content Delivery Network (CDN)
+---
+Integration: Shopify
+Details: E-commerce Platform
+---

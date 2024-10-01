@@ -1,0 +1,17 @@
+third_party_integrations.py: =============================================
+    Argus - Third-Party Integrations Check
+=============================================
+
+[*] Detecting third-party integrations for: paradoxmarketing.io
+[*] Analyzing HTML content...
+[*] Analyzing HTTP headers...
+[*] Analyzing meta tags and JavaScript references...
+[+] Third-party integrations detected:
++----------------------------------------------+
+| Integration | Details                        |
+|-------------+--------------------------------|
+| Cloudflare  | Content Delivery Network (CDN) |
+| Shopify     | E-commerce Platform            |
++----------------------------------------------+
+[+] Results saved to D:\EPI\Projects\Testing\Argus\modules\..\Results\third_party_integrations_http_paradoxmarketing.io.txt
+[*] Third-party integrations check completed.

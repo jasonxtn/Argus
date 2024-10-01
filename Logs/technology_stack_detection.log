@@ -1,0 +1,5 @@
+2024-09-29 02:04:49,828 - INFO - Started technology stack detection for: hide01.ir
+2024-09-29 02:05:05,009 - INFO - Results saved to D:\EPI\Projects\Testing\Argus\modules\..\Results\technology_stack_http_hide01.ir.txt
+2024-09-29 02:05:05,009 - INFO - Technology stack detection completed.
+2024-09-29 02:06:49,356 - INFO - Started technology stack detection for: hide01.ir
+2024-09-29 02:06:52,171 - WARNING - Process interrupted by user.

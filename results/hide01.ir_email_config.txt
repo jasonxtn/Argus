@@ -1,0 +1,6 @@
+email_config.py: =============================================
+       Argus - Email Configuration Analysis
+    =============================================
+
+    
+[!] Invalid email format. Please check the email and try again.

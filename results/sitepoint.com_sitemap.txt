@@ -1,0 +1,9 @@
+sitemap.py: [32m
+    =============================================
+               Argus - Sitemap Parsing
+    =============================================
+    
+[37m[*] Fetching sitemap for: https://www.sitepoint.com
+[31m[!] Error: Received status code 404.
+[31m[!] No sitemap found.
+[37m[*] Sitemap parsing completed.

@@ -1,0 +1,11 @@
+zonetransfer.py: =============================================
+        Argus - DNS Zone Transfer Module
+=============================================
+
+
+[*] Querying name servers for domain: hide01.ir
+[*] Attempting zone transfer with sara.ns.derak.cloud....
+[!] An error occurred during zone transfer with sara.ns.derak.cloud.: 
+[*] Attempting zone transfer with sina.ns.derak.cloud....
+[!] An error occurred during zone transfer with sina.ns.derak.cloud.: 
+[!] No zone transfer records found for hide01.ir.

@@ -1,0 +1,10 @@
+urllib3
+rich
+colorama
+requests
+bs4
+jinja2
+dnspython
+aiohttp
+whois
+pyOpenSSL

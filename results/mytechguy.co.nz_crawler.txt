@@ -1,0 +1,6 @@
+crawler.py: [32m
+    =============================================
+            Argus - Web Crawler Module
+    =============================================
+    
+[31m[!] Invalid domain provided. Please check and try again.

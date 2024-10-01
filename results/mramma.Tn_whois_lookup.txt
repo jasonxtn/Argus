@@ -1,0 +1,8 @@
+whois_lookup.py: [32m=============================================
+        Argus - WHOIS Lookup Module
+=============================================[0m
+
+[36m[*] Performing WHOIS lookup for domain: mramma.tn[0m
+[31m[!] Failed to perform WHOIS lookup for mramma.tn: module 'whois' has no 
+attribute 'whois'[0m
+[33m[!] No WHOIS information found.[0m
