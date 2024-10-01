@@ -102,7 +102,6 @@ async def discover_assets(target, soup, asset_type):
     return list(set(assets))
 
 def display_results(robots_txt, sitemaps, internal_links, external_links, css_files, js_files):
-    # Table to display asset links (CSS and JS files)
     if css_files or js_files:
         asset_table = Table(show_header=True, header_style="bold magenta", box=None)  # Open sides for easy copying
         asset_table.add_column("Asset Type", style="WHITE", justify="left")
@@ -116,7 +115,6 @@ def display_results(robots_txt, sitemaps, internal_links, external_links, css_fi
         console.print("\n" + Fore.WHITE + "[*] Asset Files Found:")
         console.print(asset_table)
 
-    # Summary table of counts
     summary_table = Table(show_header=True, header_style="bold magenta")
     summary_table.add_column("Category", style="cyan", justify="left")
     summary_table.add_column("Count", style="green")

@@ -15,7 +15,6 @@ from colorama import Fore, init
 from utils.report_generator import generate_report
 from utils.util import check_api_configured
 
-# Adding sys.path for relative imports
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from config import settings
 
@@ -100,17 +99,17 @@ tools = [
     {'number': '00', 'name': 'BEAST MODE', 'script': '', 'section': 'Special Mode'},
 ]
 
-# Create a mapping from module numbers to tool data
+
 tools_mapping = {tool['number']: tool for tool in tools}
 
-# Calculate total number of modules
+
 number_of_modules = len([tool for tool in tools if tool['script'] and tool['section'] not in ['Run All Scripts', 'Special Mode']])
 
-# Clear screen function
+
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# Enhanced ASCII art banner with description
+
 from rich import print as rprint
 from rich.panel import Panel
 from rich.console import Console
@@ -152,36 +151,32 @@ def logo():
 ██║  ██║██║  ██║╚██████╔╝╚██████╔╝███████║
 ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝                                       
     """
-    # Split the ASCII art into lines
+    
     lines = ascii_art.strip("\n").split("\n")
     
-    # Define a list of colors to choose from
+    
     colors = ["red", "green", "yellow", "blue", "magenta", "cyan", "white"]
     
-    # Create colored lines for the ASCII art
+    
     colored_lines = []
     for line in lines:
         color = random.choice(colors)
         colored_lines.append(f"[bold {color}]{line}[/bold {color}]")
         time.sleep(0.05)
     
-    # Combine the colored lines into a single string
+    
     colored_ascii_art = "\n".join(colored_lines)
     
-    # Create the description text with proper spacing
+    
     description = f"""
 [bold cyan]The Ultimate Information Gathering Tool[/bold cyan]
 
 Version: [bold green]{VERSION}[/bold green]    Modules: [bold yellow]{number_of_modules}[/bold yellow]    Coded by: [bold magenta]{AUTHOR}[/bold magenta]
     """.strip()
     
-    # Combine the ASCII art and description with extra line spacing
+    
     combined_text = f"{colored_ascii_art}\n{description}"
-    
-    # Randomize the color for the panel border
     panel_color = random.choice(colors)
-    
-    # Print the combined text inside a Panel with padding for better spacing
     console.print(Panel(combined_text, border_style=panel_color, padding=(1, 4)), justify="center")
 
 
@@ -196,26 +191,24 @@ import time
 console = Console()
 
 
-# Function to display the tools table
+
 def display_table():
     table = Table(box=SIMPLE_HEAVY)
     sections = ['Network & Infrastructure', 'Web Application Analysis', 'Security & Threat Intelligence']
 
-    # Add columns for each section
+    
     table.add_column("Network & Infrastructure", justify="left", style="cyan", no_wrap=True)
     table.add_column("Web Application Analysis", justify="left", style="green", no_wrap=True)
     table.add_column("Security & Threat Intelligence", justify="left", style="magenta", no_wrap=True)
 
-    # Group tools by section
+    
     tools_by_section = defaultdict(list)
     for tool in tools:
         if tool['section'] in sections:
             tools_by_section[tool['section']].append(f"[bold]{tool['number']}[/bold]. {tool['name']}")
 
-    # Find the maximum number of tools in any section
     max_tools = max(len(tools_by_section[section]) for section in sections)
 
-    # Add rows to the table
     for idx in range(max_tools):
         row = []
         for section in sections:
@@ -225,20 +218,18 @@ def display_table():
                 row.append("")
         table.add_row(*row)
 
-    # Add empty rows for spacing
     table.add_row("", "", "")
     table.add_row("", "", "")
 
-    # Add "Run All" options
+
     table.add_row("[bold]53[/bold]. Run All Infrastructure Tools", "[bold]54[/bold]. Run All Web Intelligence Tools", "[bold]55[/bold]. Run All Security Tools")
 
-    # Add separation before BEAST MODE
+
     table.add_row("", "", "")
     table.add_row("", "[bold red]" + "-" * 15 + " 00. BEAST MODE " + "-" * 15 + "[/bold red]", "")
 
     console.print(table)
 
-# Check if APIs are configured
 def check_api_modules():
     api_status = {
         'VirusTotal': check_api_configured('VIRUSTOTAL_API_KEY'),
@@ -254,13 +245,12 @@ def beast_mode():
     console.print("[bold red][*] Running BEAST MODE - Executing All Modules Except Excluded Ones[/bold red]")
     api_status = check_api_modules()
 
-    # Exclude modules that require special inputs or are not suitable
     excluded_scripts = ['subdomain_takeover.py', 'data_leak.py']
 
     selected_modules = [tool['number'] for tool in tools if tool['script'] and tool['script'] not in excluded_scripts and tool['number'] != '00']
     run_modules(selected_modules, api_status)
 
-# Execute a script for a specific module in real time with progress indicator
+
 def execute_script(script_name, target):
     script_path = os.path.join("modules", script_name)
     if os.path.isfile(script_path):
@@ -289,7 +279,7 @@ def execute_script(script_name, target):
     else:
         console.print(f"Script {script_name} not found in 'modules' directory.", style="bold red")
 
-# Run the selected modules
+
 def run_modules(selected_modules, api_status):
     domain = Prompt.ask("[bold yellow]Enter the target domain or URL[/bold yellow]")
     report_data = {}
@@ -304,10 +294,9 @@ def run_modules(selected_modules, api_status):
         else:
             console.print(f"[!] Invalid module number: {mod_number}", style="bold red")
 
-    # Generate the report
+
     generate_report(report_data, domain, [tools_mapping[mod]['name'] for mod in selected_modules])
 
-    # Wait for the user to press Enter before restarting Argus
     Prompt.ask("\n[bold yellow]Press Enter to continue...[/bold yellow]")
     main()
 
@@ -333,7 +322,6 @@ def main():
                 selected_modules = [tool['number'] for tool in tools if tool['section'] == 'Security & Threat Intelligence']
                 run_modules(selected_modules, check_api_modules())
             else:
-                # Support multiple selections separated by spaces or commas
                 selected_modules = [mod.strip() for mod in choice.replace(',', ' ').split()]
                 if all(mod in tools_mapping for mod in selected_modules):
                     run_modules(selected_modules, check_api_modules())
