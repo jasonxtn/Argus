@@ -18,7 +18,7 @@ API_KEYS = {
 # Export Settings for Reports
 EXPORT_SETTINGS = {
     "enable_txt_export": True,   # Enable or disable TXT report generation
-    "enable_csv_export": False    # Enable or disable CSV report generation (Still in Developpement)
+    "enable_csv_export": False    # Enable or disable CSV report generation (Still in Development)
 }
 
 # Report Settings
