@@ -55,7 +55,7 @@ Take a look at Argus in action:
 To get started with Argus, follow these simple steps:
 
 ```bash
-git clone https://github.com/jason13/argus.git
+git clone https://github.com/jasonxtn/argus.git
 cd argus
 pip install -r requirements.txt
 ```
