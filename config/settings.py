@@ -10,7 +10,7 @@ DEFAULT_TIMEOUT = 10
 API_KEYS = {
     "VIRUSTOTAL_API_KEY": "YOUR_VIRUSTOTAL_API_KEY",  # API key for VirusTotal
     "SHODAN_API_KEY": "YOUR_SHODAN_API_KEY",         # API key for Shodan
-    "GOOGLE_API_KEY": "YOUR_GOOGLE_API_KEY",     # API key for Google
+    "GOOGLE_API_KEY": "YOUR_GOOGLE_PageSpeed_Insights_API_KEY",     # API key for Google
     "CENSYS_API_ID": "YOUR_CENSYS_API_ID",           # API ID for Censys
     "CENSYS_API_SECRET": "YOUR_CENSYS_API_SECRET"    # API Secret for Censys
 }

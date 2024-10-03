@@ -2,7 +2,7 @@
 <h1 align="center">
   <a href="">
     <picture>
-      <source height="200" media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/Z5jdzzY.png">
+      <source height="220" media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/nGEReZh.png">
       <img height="200" alt="Argus" src="https://i.imgur.com/FL0dmHd.png">
     </picture>
   </a>
@@ -55,7 +55,7 @@ Take a look at Argus in action:
 To get started with Argus, follow these simple steps:
 
 ```bash
-git clone https://github.com/jason13/argus.git
+git clone https://github.com/jasonxtn/argus.git
 cd argus
 pip install -r requirements.txt
 ```
