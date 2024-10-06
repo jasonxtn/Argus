@@ -8,3 +8,4 @@ dnspython
 aiohttp
 whois
 pyOpenSSL
+python-nmap

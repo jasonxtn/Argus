@@ -99,48 +99,12 @@ tools = [
     {'number': '00', 'name': 'BEAST MODE', 'script': '', 'section': 'Special Mode'},
 ]
 
-
 tools_mapping = {tool['number']: tool for tool in tools}
-
 
 number_of_modules = len([tool for tool in tools if tool['script'] and tool['section'] not in ['Run All Scripts', 'Special Mode']])
 
-
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
-
-
-from rich import print as rprint
-from rich.panel import Panel
-from rich.console import Console
-import random
-import time
-
-console = Console()
-
-from rich import print as rprint
-from rich.panel import Panel
-from rich.console import Console
-import random
-import time
-
-console = Console()
-
-from rich import print as rprint
-from rich.panel import Panel
-from rich.console import Console
-import random
-import time
-
-console = Console()
-
-from rich import print as rprint
-from rich.panel import Panel
-from rich.console import Console
-import random
-import time
-
-console = Console()
 
 def logo():
     ascii_art = f"""
@@ -153,55 +117,32 @@ def logo():
     """
     
     lines = ascii_art.strip("\n").split("\n")
-    
-    
     colors = ["red", "green", "yellow", "blue", "magenta", "cyan", "white"]
-    
-    
     colored_lines = []
     for line in lines:
         color = random.choice(colors)
         colored_lines.append(f"[bold {color}]{line}[/bold {color}]")
         time.sleep(0.05)
     
-    
     colored_ascii_art = "\n".join(colored_lines)
-    
-    
     description = f"""
 [bold cyan]The Ultimate Information Gathering Tool[/bold cyan]
 
 Version: [bold green]{VERSION}[/bold green]    Modules: [bold yellow]{number_of_modules}[/bold yellow]    Coded by: [bold magenta]{AUTHOR}[/bold magenta]
     """.strip()
     
-    
     combined_text = f"{colored_ascii_art}\n{description}"
     panel_color = random.choice(colors)
     console.print(Panel(combined_text, border_style=panel_color, padding=(1, 4)), justify="center")
 
-
-
-
-from rich import print as rprint
-from rich.panel import Panel
-from rich.console import Console
-import random
-import time
-
-console = Console()
-
-
-
 def display_table():
     table = Table(box=SIMPLE_HEAVY)
     sections = ['Network & Infrastructure', 'Web Application Analysis', 'Security & Threat Intelligence']
-
     
     table.add_column("Network & Infrastructure", justify="left", style="cyan", no_wrap=True)
     table.add_column("Web Application Analysis", justify="left", style="green", no_wrap=True)
     table.add_column("Security & Threat Intelligence", justify="left", style="magenta", no_wrap=True)
 
-    
     tools_by_section = defaultdict(list)
     for tool in tools:
         if tool['section'] in sections:
@@ -220,11 +161,7 @@ def display_table():
 
     table.add_row("", "", "")
     table.add_row("", "", "")
-
-
     table.add_row("[bold]53[/bold]. Run All Infrastructure Tools", "[bold]54[/bold]. Run All Web Intelligence Tools", "[bold]55[/bold]. Run All Security Tools")
-
-
     table.add_row("", "", "")
     table.add_row("", "[bold red]" + "-" * 15 + " 00. BEAST MODE " + "-" * 15 + "[/bold red]", "")
 
@@ -249,7 +186,6 @@ def beast_mode():
 
     selected_modules = [tool['number'] for tool in tools if tool['script'] and tool['script'] not in excluded_scripts and tool['number'] != '00']
     run_modules(selected_modules, api_status)
-
 
 def execute_script(script_name, target):
     script_path = os.path.join("modules", script_name)
@@ -279,7 +215,6 @@ def execute_script(script_name, target):
     else:
         console.print(f"Script {script_name} not found in 'modules' directory.", style="bold red")
 
-
 def run_modules(selected_modules, api_status):
     domain = Prompt.ask("[bold yellow]Enter the target domain or URL[/bold yellow]")
     report_data = {}
@@ -294,7 +229,6 @@ def run_modules(selected_modules, api_status):
         else:
             console.print(f"[!] Invalid module number: {mod_number}", style="bold red")
 
-
     generate_report(report_data, domain, [tools_mapping[mod]['name'] for mod in selected_modules])
 
     Prompt.ask("\n[bold yellow]Press Enter to continue...[/bold yellow]")
@@ -308,7 +242,7 @@ def main():
 
     try:
         while True:
-            choice = Prompt.ask("[bold red]root@argus:~#[/bold red]").strip()
+            choice = Prompt.ask("[bold red]argus@argus:~#[/bold red]").strip()
 
             if choice == '00':
                 beast_mode()

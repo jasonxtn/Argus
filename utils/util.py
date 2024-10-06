@@ -117,7 +117,7 @@ def clean_url(target):
 
     # If no scheme (http/https) is provided, assume 'http://'
     if not parsed_url.scheme:
-        target = f"http://{target}"
+        target = f"https://{target}"
         parsed_url = urlparse(target)  # Re-parse after adding scheme
 
     # Clean up any trailing slashes from the path
@@ -128,5 +128,5 @@ def clean_url(target):
 def ensure_url_format(domain_input):
     parsed_url = urlparse(domain_input)
     if not parsed_url.scheme:
-        domain_input = f"http://{domain_input}"
+        domain_input = f"https://{domain_input}"
     return domain_input

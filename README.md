@@ -65,6 +65,23 @@ Once installed, you can launch Argus with:
 ```bash
 python argus.py
 ```
+## ⚙️ Run from a container
+
+To build and run Argus from a container follow these steps:
+
+```
+Build the container:
+  docker build -t argus .
+
+Run the container (adjust the path (~/tools/argus/results) to where you want argus results stored)
+docker run --rm -it -v ~/tools/argus/results:/app/results argus                          
+
+Get a shell in the container
+as root:  docker run -it --user root argus /bin/sh
+as argus: docker run -it argus /bin/sh
+
+```
+
 
 ---
 
