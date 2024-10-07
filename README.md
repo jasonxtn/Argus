@@ -2,7 +2,7 @@
 <h1 align="center">
   <a href="">
     <picture>
-      <source height="200" media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/Z5jdzzY.png">
+      <source height="220" media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/nGEReZh.png">
       <img height="200" alt="Argus" src="https://i.imgur.com/FL0dmHd.png">
     </picture>
   </a>
@@ -55,7 +55,7 @@ Take a look at Argus in action:
 To get started with Argus, follow these simple steps:
 
 ```bash
-git clone https://github.com/jason13/argus.git
+git clone https://github.com/jasonxtn/argus.git
 cd argus
 pip install -r requirements.txt
 ```
@@ -94,50 +94,53 @@ These tools help you gather data about a network, uncovering vital details about
 16. **TXT Records**: Fetch TXT records, often used for verification purposes.
 17. **WHOIS Lookup**: Perform WHOIS queries to gather domain ownership details.
 18. **Zone Transfer**: Attempt to perform DNS zone transfers.
+19. **HTTP/2 and HTTP/3 Support Checker**: Check if the server supports HTTP/2 and HTTP/3.
 
 ### Web Application Analysis Tools
 
 These modules focus on understanding the structure and security of web applications:
 
-19. **Archive History**: View the target's history using internet archives.
-20. **Broken Links Detection**: Find broken links that may lead to user frustration or security gaps.
-21. **Carbon Footprint**: Evaluate the environmental impact of a website.
-22. **CMS Detection**: Detect the type of CMS used, like WordPress, Joomla, etc.
-23. **Cookies Analyzer**: Analyze cookies for secure attributes and potential privacy issues.
-24. **Content Discovery**: Discover hidden directories, files, and endpoints.
-25. **Crawler**: Crawl the site to uncover data and map out its structure.
-26. **Robots.txt Analyzer**: Analyze the `robots.txt` file for hidden resources.
-27. **Directory Finder**: Look for directories that may not be indexed publicly.
-28. **Performance Monitoring**: Monitor the website's response time and load performance.
-29. **Quality Metrics**: Assess the quality of the site's content and user experience.
-30. **Redirect Chain**: Follow redirects to analyze if they're safe or malicious.
-31. **Sitemap Parsing**: Extract URLs from the site's sitemap.
-32. **Social Media Presence Scan**: Analyze the social media profiles linked to the target.
-33. **Technology Stack Detection**: Identify the technologies and frameworks the site uses.
-34. **Third-Party Integrations**: Discover any third-party services integrated into the site.
+20. **Archive History**: View the target's history using internet archives.
+21. **Broken Links Detection**: Find broken links that may lead to user frustration or security gaps.
+22. **Carbon Footprint**: Evaluate the environmental impact of a website.
+23. **CMS Detection**: Detect the type of CMS used, like WordPress, Joomla, etc.
+24. **Cookies Analyzer**: Analyze cookies for secure attributes and potential privacy issues.
+25. **Content Discovery**: Discover hidden directories, files, and endpoints.
+26. **Crawler**: Crawl the site to uncover data and map out its structure.
+27. **Robots.txt Analyzer**: Analyze the `robots.txt` file for hidden resources.
+28. **Directory Finder**: Look for directories that may not be indexed publicly.
+29. **Email Harvesting**: Extract email addresses from the target domain.
+30. **Performance Monitoring**: Monitor the website's response time and load performance.
+31. **Quality Metrics**: Assess the quality of the site's content and user experience.
+32. **Redirect Chain**: Follow redirects to analyze if they're safe or malicious.
+33. **Sitemap Parsing**: Extract URLs from the site's sitemap.
+34. **Social Media Presence Scan**: Analyze the social media profiles linked to the target.
+35. **Technology Stack Detection**: Identify the technologies and frameworks the site uses.
+36. **Third-Party Integrations**: Discover any third-party services integrated into the site.
 
 ### Security & Threat Intelligence Tools
 
 The security modules in Argus are designed to assess the target's defenses and gather threat intelligence:
 
-35. **Censys Reconnaissance**: Use Censys for in-depth details about the target's assets.
-36. **Certificate Authority Recon**: Examine the certificate authority details.
-37. **Data Leak Detection**: Check for potential data leaks and sensitive data exposure.
-38. **Firewall Detection**: Identify whether a firewall or WAF is protecting the target.
-39. **Global Ranking**: Look up the site's global ranking to gauge its popularity.
-40. **HTTP Headers**: Extract and evaluate HTTP response headers.
-41. **HTTP Security Features**: Check for secure HTTP headers such as HSTS, CSP, etc.
-42. **Malware & Phishing Check**: Scan the site for signs of malware and phishing risks.
-43. **Pastebin Monitoring**: Search paste sites for leaks associated with the target.
-44. **Privacy & GDPR Compliance**: Verify compliance with GDPR and other privacy regulations.
-45. **Security.txt Check**: Locate and analyze the `security.txt` file for vulnerability disclosure policies.
-46. **Shodan Reconnaissance**: Use Shodan to discover open ports, services, and vulnerabilities.
-47. **SSL Labs Report**: Get a detailed SSL/TLS assessment via SSL Labs.
-48. **SSL Pinning Check**: Check if SSL pinning is implemented on the site.
-49. **Subdomain Enumeration**: Discover subdomains of the target domain.
-50. **Subdomain Takeover**: Test whether subdomains are vulnerable to takeover.
-51. **VirusTotal Scan**: Check the target's reputation using VirusTotal.
-
+37. **Censys Reconnaissance**: Use Censys for in-depth details about the target's assets.
+38. **Certificate Authority Recon**: Examine the certificate authority details.
+39. **Data Leak Detection**: Check for potential data leaks and sensitive data exposure.
+40. **Exposed Environment Files Checker**: Identify publicly exposed `.env` files.
+41. **Firewall Detection**: Identify whether a firewall or WAF is protecting the target.
+42. **Global Ranking**: Look up the site's global ranking to gauge its popularity.
+43. **HTTP Headers**: Extract and evaluate HTTP response headers.
+44. **HTTP Security Features**: Check for secure HTTP headers such as HSTS, CSP, etc.
+45. **Malware & Phishing Check**: Scan the site for signs of malware and phishing risks.
+46. **Pastebin Monitoring**: Search paste sites for leaks associated with the target.
+47. **Privacy & GDPR Compliance**: Verify compliance with GDPR and other privacy regulations.
+48. **Security.txt Check**: Locate and analyze the `security.txt` file for vulnerability disclosure policies.
+49. **Shodan Reconnaissance**: Use Shodan to discover open ports, services, and vulnerabilities.
+50. **SSL Labs Report**: Get a detailed SSL/TLS assessment via SSL Labs.
+51. **SSL Pinning Check**: Check if SSL pinning is implemented on the site.
+52. **Subdomain Enumeration**: Discover subdomains of the target domain.
+53. **Subdomain Takeover**: Test whether subdomains are vulnerable to takeover.
+54. **VirusTotal Scan**: Check the target's reputation using VirusTotal.
+    
 ### How to Use Argus
 
 1. Launch Argus from the command line.
@@ -160,7 +163,17 @@ This command initiates the **Associated Hosts** tool.
 Certain modules require API keys to work. Make sure to add any necessary API keys in the `config/settings.py` file before running Argus to unlock full functionality.
 
 ---
+## 🔄 Changelog
 
+1.1 Release Notes : 
+- Added HTTP/2 and HTTP/3 Support Checker Module
+- Added Check for Publicly Exposed Environment Files
+- Fixed Txt Files Export
+- update Traceroute Module
+- Update Report Generation module
+- Added .gitignore file
+
+---
 ## 🤝 Contributing
 
 We welcome contributions! Whether it's fixing bugs, adding new features, or improving documentation, your help is appreciated. Fork the repo and submit a pull request .

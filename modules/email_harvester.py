@@ -10,8 +10,7 @@ from rich.console import Console
 from rich.table import Table
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.util import clean_domain_input
-from config.settings import USER_AGENT, DEFAULT_TIMEOUT
+from config.settings import HEADERS, DEFAULT_TIMEOUT
 
 console = Console()
 
@@ -26,11 +25,11 @@ def banner():
 
 class EmailHarvester:
     def __init__(self, base_url):
-        self.base_url = clean_domain_input(base_url)
+        self.base_url = base_url
         self.visited_urls = set()
         self.emails_found = set()
         self.urls_queue = deque()
-        self.headers = {'User-Agent': USER_AGENT}
+        self.headers = HEADERS
         self.max_pages = 100
         self.lock = threading.Lock()
         self.num_threads = 10
@@ -76,6 +75,7 @@ class EmailHarvester:
                 self.emails_found.update(new_emails)
             for email in new_emails:
                 console.print(f"[green][+] Found email: {email}[/green]")
+            console.print(f"[magenta]Total emails found so far: {len(self.emails_found)}[/magenta]")
 
     def extract_links(self, html_content, current_url):
         soup = BeautifulSoup(html_content, 'html.parser')

@@ -1,0 +1,222 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.dll
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+setup.py
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+env.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+*.vs/
+
+# Eclipse
+.project
+.pydevproject
+
+# Vim
+*.swp
+*.swo
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Local configuration files
+config.py
+config/
+settings.py
+settings/
+*.ini
+*.cfg
+
+# Secret files
+*.pem
+*.key
+*.crt
+*.csr
+*.der
+*.p12
+*.pfx
+
+# Modules and utilities
+modules/__pycache__/
+modules/*.py[cod]
+utils/__pycache__/
+utils/*.py[cod]
+
+# Reports and outputs
+reports/
+output/
+*.html
+*.pdf
+*.docx
+*.xlsx
+
+# Ignore virtual environment directories
+venv/
+env/
+.venv/
+.virtualenv/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore mypy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ignore Pyre type checker
+.pyre/
+
+# Ignore Pylint reports
+pylint_report.txt
+
+# Ignore Bandit security scan reports
+bandit_report.json
+
+# Ignore environmental variable files
+.env
+.env.*
+
+# Ignore compiled code
+*.o
+*.so
+*.pyd
+
+# Ignore wheel files
+*.whl
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Ignore documentation builds
+docs/_build/
+
+# Ignore Jupyter Notebook configuration
+.ipynb_checkpoints/
+
+# Ignore test results
+test-results/
+
+# Ignore backups
+*~
+
+# Ignore lock files
+Pipfile.lock
+poetry.lock
+
+# Ignore Docker files
+*.dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore API keys and secrets
+api_keys/
+*.secret
+*.token
+
+# Ignore any personal notes or TODO files
+TODO
+notes.txt
+
+# Ignore any other personal files
+*.personal

@@ -8,3 +8,5 @@ dnspython
 aiohttp
 whois
 pyOpenSSL
+python-nmap
+aioquic
