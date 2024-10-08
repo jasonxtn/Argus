@@ -170,14 +170,9 @@ Certain modules require API keys to work. Make sure to add any necessary API key
 - Added HTTP/2 and HTTP/3 Support Checker module
 - Added Check for Publicly Exposed Environment Files module
 - Fixed Txt Files Export
-- update Traceroute module
-- Update Report Generation module
+- Updated Traceroute module
+- Updated Report Generation module
 - Added .gitignore file
-
----
-## 🤝 Contributing
-
-We welcome contributions! Whether it's fixing bugs, adding new features, or improving documentation, your help is appreciated. Fork the repo and submit a pull request .
 
 ---
 ## ⭐️ Show Your Support
