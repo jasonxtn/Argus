@@ -179,6 +179,7 @@ def beast_mode():
 
 def execute_script(script_name, target):
     script_path = os.path.join("modules", script_name)
+    output = ""
     if os.path.isfile(script_path):
         try:
             with console.status(f"[bold green]Running {script_name}...[/bold green]", spinner="dots"):
@@ -190,7 +191,9 @@ def execute_script(script_name, target):
                 )
                 for line in iter(process.stdout.readline, ''):
                     if line:
-                        console.print(line.strip())
+                        stripped_line = line.strip()
+                        console.print(stripped_line)
+                        output += stripped_line + "\n"  
                     else:
                         break
                 process.stdout.close()
@@ -201,6 +204,8 @@ def execute_script(script_name, target):
             console.print(f"[!] An unexpected error occurred while running {script_name}: {e}", style="bold red")
     else:
         console.print(f"Script {script_name} not found in 'modules' directory.", style="bold red")
+    return output  
+
 
 def run_modules(selected_modules, api_status, mode_name=None):
     domain = Prompt.ask("[bold yellow]Enter the target domain or URL[/bold yellow]")
