@@ -166,10 +166,11 @@ Certain modules require API keys to work. Make sure to add any necessary API key
 ## 🔄 Changelog
 
 1.1 Release Notes : 
-- Added HTTP/2 and HTTP/3 Support Checker Module
-- Added Check for Publicly Exposed Environment Files
+- Added Emails Harvesting module
+- Added HTTP/2 and HTTP/3 Support Checker module
+- Added Check for Publicly Exposed Environment Files module
 - Fixed Txt Files Export
-- update Traceroute Module
+- update Traceroute module
 - Update Report Generation module
 - Added .gitignore file
 
