@@ -66,6 +66,13 @@ Once installed, you can launch Argus with:
 python argus.py
 ```
 
+### With Docker
+
+```bash
+docker build -t argus .
+docker run -it --rm argus
+```
+
 ---
 
 ## 📖 Usage
