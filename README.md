@@ -78,7 +78,7 @@ python -m argus
 git clone https://github.com/jasonxtn/argus.git
 cd argus
 docker build -t argus-recon:latest .
-docker run -it --rm -v $(pwd)/results:/app/results argus-recon:latest
+docker run -it --rm -v $(pwd)/results:/app/results --entrypoint python argus-recon:latest -m argus
 ```
 
 ---
