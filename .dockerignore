@@ -65,6 +65,7 @@ argus.log
 results/
 output/
 *.txt
+!requirements.txt
 *.csv
 *.json
 
