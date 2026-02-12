@@ -64,3 +64,10 @@ PROFILE_DEFAULTS = {
 
 from multiprocessing import cpu_count
 DEFAULT_THREAD_CAP = min(32, cpu_count() * 5)
+
+# Pipeline settings
+PIPELINE_ENABLED = True
+CONTEXT_CHAINING = True
+QUALITY_GATES_ENABLED = True
+AUTO_EXPORT = None  # Set to "json" or "markdown" to auto-export reports
+SESSION_DIR = "~/.argus/sessions"

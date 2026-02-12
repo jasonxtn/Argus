@@ -50,6 +50,7 @@ class _BareCLI(Base):
         self.quiet_mode = False
         self.no_color = False
         self.wrap_width = None
+        self._session = None  # Pipeline session (lazy-initialized)
         os.system("cls" if os.name == "nt" else "clear")
         logo(VERSION, number_of_modules, AUTHOR)
         print_status_bar(self)

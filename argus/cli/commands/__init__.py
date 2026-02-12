@@ -14,6 +14,8 @@ _COMMAND_MODULES: List[str] = [
     ".favorites",
     ".utility",
     ".help",
+    ".scan",
+    ".session_cmd",
 ]
 
 __all__ = ["COMMAND_MIXINS", "register_mixins"]
