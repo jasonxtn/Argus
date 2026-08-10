@@ -399,6 +399,17 @@
       "primary_input": "Domain/IP/CIDR",
       "options": [],
       "script": "udp_service_sampler.py"
+    },
+    {
+      "id": "139",
+      "name": "JARM TLS Fingerprint",
+      "description": "Active JARM fingerprint of the server's TLS stack; hashes match public JARM/C2 datasets.",
+      "primary_input": "Domain",
+      "options": [
+        "timeout",
+        "port"
+      ],
+      "script": "jarm_fingerprint.py"
     }
   ],
   "web_application_analysis": [
